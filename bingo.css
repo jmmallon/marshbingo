@@ -1,0 +1,282 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font: 181%/1.5 Verlag, --system-ui, Helvetica, Arial, sans-serif;
+}
+
+.caption {
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+.captionpdf {
+	font-weight: 300;
+	font-size: 1rem;
+	font: 50%/1.5 Verlag, --system-ui, Helvetica, Arial, sans-serif;
+	padding-top: 2mm;
+	float: left;
+}
+
+.caption2 {
+	font-weight: 300;
+	font-size: 1rem;
+        padding: 5mm;
+	float: left;
+}
+
+.topbuffer {
+	height: 30.88mm;
+}
+
+.button {
+        background-color: white;
+        border: 1px solid;
+        color: black;
+        padding: 5mm;
+        text-align: center;
+        text-decoration: bold;
+        font-size: 16px;
+}
+
+.button2 {
+        background-color: white;
+        border: 1px solid;
+        color: black;
+	padding: 2mm;
+        text-align: center;
+        text-decoration: bold;
+        font-size: 16px;
+}
+
+.menubutton {
+	width: 100%;
+	border-bottom: 0px solid #f0f;
+	padding-left: 5mm;
+	vertical-align: middle;
+}
+
+.cardbutton {
+	width: 100%;
+	border-bottom: 0px solid #f0f;
+	padding: 5mm;
+	vertical-align: middle;
+}
+
+#pages {
+	font-weight: 600;
+	font-size: 1.8rem;
+}
+
+#pages > li {
+	list-style: none;
+	border-bottom: 0px solid #000;
+}
+
+#pages > li .card {
+ 	height: 148.5mm;
+	border-bottom: 0px solid #f0f;
+	padding: 5mm;
+	vertical-align: middle;
+}
+
+#pages .card table {
+	border: 3px solid #000;
+	border-collapse: collapse;
+	width: 230.5mm;
+	height: 230.5mm;
+	float: left;
+}
+
+#pages .card table td {
+	border: 1px solid #000;
+	text-align: center;
+	width: 20%;
+}
+
+#playpages {
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+#playpages > li {
+	list-style: none;
+	border-bottom: 0px solid #000;
+}
+
+#playpages > li .card {
+ 	height: 148.5mm;
+	border-bottom: 0px solid #f0f;
+	padding: 5mm;
+	vertical-align: middle;
+}
+
+#playpages .free {
+	background-image: url(x-symbol.png);
+}
+
+#playpages .card table {
+	margin-right: 20px;
+	border: 3px solid #000;
+	border-collapse: collapse;
+	width: 160.5mm;
+	height: 160.5mm;
+	float: left;
+}
+
+#playpages .card table td {
+	border: 1px solid #000;
+	text-align: center;
+	width: 20%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#playpages hr {
+  display: block;
+  margin-top: 0.0em;
+  margin-bottom: 0.0em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+#playpagespdf {
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+#playpagespdf > li {
+	list-style: none;
+	border-bottom: 0px solid #000;
+}
+
+#playpagespdf > li .card {
+ 	height: 148.5mm;
+	border-bottom: 0px solid #f0f;
+	padding: 5mm;
+	vertical-align: middle;
+}
+
+#playpagespdf .free {
+	background-image: url(x-symbol.png);
+}
+
+#playpagespdf .card table {
+	margin-right: 20px;
+	border: 3px solid #000;
+	border-collapse: collapse;
+	width: 160.5mm;
+	height: 160.5mm;
+	float: left;
+}
+
+#playpagespdf .card table td {
+	border: 1px solid #000;
+	text-align: center;
+	width: 20%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#playpagespdf hr {
+  display: block;
+  margin-top: 0.0em;
+  margin-bottom: 0.0em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+#preview > li {
+	list-style: none;
+	border-bottom: 0px solid #000;
+	padding-left: 5mm;
+}
+
+#preview > li .card {
+	border-bottom: 0px solid #f0f;
+	vertical-align: middle;
+	margin-right: 2mm;
+}
+
+#preview > td .free {
+	font-weight: 600;
+	font-size: 0.6rem;
+}
+
+#preview .card table {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	float: left;
+	width: 18%;
+	height: 18%;
+	margin-right: 2mm;
+}
+
+#preview .card table td {
+	border: 1px solid #000;
+	text-align: center;
+	width: 20%;
+}
+
+hr {
+  display: block;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+@page {
+  size: 8.5in 11in;
+}
+
+/* Hide the printable version on screen */
+
+@media screen {
+  .topbuffer{
+          display:none;
+  }
+
+  #pages {
+          display:none;
+  }
+
+}
+
+/* Hide the screen version when printing */
+
+@media print {
+  .card {page-break-after: always;}
+  .caption {
+	font: 50%/1.5 Verlag, --system-ui, Helvetica, Arial, sans-serif;
+	padding-top: 2mm;
+	float: left;
+  }
+
+  .caption2 {
+	font: 50%/1.5 Verlag, --system-ui, Helvetica, Arial, sans-serif;
+  }
+
+  #preview {
+          display:none;
+  }
+
+  .cardbutton{
+          display:none;
+  }
+}
